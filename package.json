@@ -1,0 +1,46 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "scripts": {
+    "typings-install": "typings install",
+    "postinstall": "npm run typings-install",
+    "start": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 8000 --host 0.0.0.0 --content-base dist"
+  },
+  "engines": {
+    "node": "5.10.1",
+    "npm": "3.10.7"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0-rc.3",
+    "@angular/upgrade": "2.0.0",
+    "@types/request": "0.0.30",
+    "angular2-template-loader": "^0.5.0",
+    "angularfire2": "^2.0.0-beta.5",
+    "awesome-typescript-loader": "^2.2.1",
+    "copy-webpack-plugin": "^3.0.1",
+    "core-js": "^2.4.0",
+    "firebase": "^3.4.0",
+    "hammerjs": "^2.0.8",
+    "html-webpack-plugin": "^2.22.0",
+    "ie-shim": "^0.1.0",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.12",
+    "typescript": "^2.0.0",
+    "typings": "^1.0.5",
+    "webcomponents.js": "^0.7.22",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1",
+    "webpack-merge": "^0.14.1",
+    "zone.js": "0.6.21"
+  },
+  "devDependencies": {}
+}

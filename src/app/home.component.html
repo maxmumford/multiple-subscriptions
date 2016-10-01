@@ -1,0 +1,34 @@
+<div>
+  <button type="button" (click)="generateItems()">Generate Items</button>
+  <hr>
+
+  <p>
+    Demonstrates <a href="https://github.com/angular/angularfire2/issues/574">https://github.com/angular/angularfire2/issues/574</a>
+  </p>
+
+  <h3>Reproduction steps</h3>
+  <ul>
+    <li>Add firebase credentials to app.module.ts</li>
+    <li>Click "Generate items" to get some example data (do this only once)</li>
+    <li>Refresh the page</li>
+    <li>Open console</li>
+    <li>Notice "Got items" outputted once with a single array of objects</li>
+    <li>Click "find items of type 1"</li>
+    <li>Notice "Found items of type 1" is printed multiple times as opposed to just once as expected (see example below)</li>
+  </ul>
+
+  <pre>
+    Found items of type 1:  []
+    Found items of type 1:  [Object]
+    Found items of type 1:  [Object, Object]
+    Found items of type 1:  [Object, Object, Object]
+    Found items of type 1:  [Object, Object, Object, Object]
+    Found items of type 1:  [Object, Object, Object, Object, Object]
+    Found items of type 1:  [Object, Object, Object, Object, Object, Object]
+  </pre>
+
+  <button (click)="findType1()">
+    Find items of type 1
+  </button>
+
+</div>
